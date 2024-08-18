@@ -32,8 +32,11 @@ AiDishwasher is an AI-powered assistant that helps you choose and start a dishwa
     ```
 
 3. **Set up your environment variables:**
-    - Create a `.env` file in the root directory of the project.
-    - Add your OpenAI API key and system prompt to the `.env` file:
+    - A `template.env` file is included in the repository to help you set up your local environment variables. Copy this file to create a `.env` file:
+      ```bash
+      cp template.env .env
+      ```
+    - In the `.env` file, fill in your OpenAI API key and system prompt:
       ```
       OPENAI_API_KEY=your_openai_api_key_here
       SYSTEM_PROMPT="Your custom system prompt here"
@@ -56,7 +59,7 @@ AiDishwasher is an AI-powered assistant that helps you choose and start a dishwa
 
 ```bash
 $ python main.py
-Jaki program mam włączyć ?: Jaki program polecasz aby skończyć zmywanie jeśli za 15 min mam gości ?
+Jaki program mam włączyć ?: Jaki program polecasz na szybkie umycie naczyń przed przyjściem gości?
 {
   "program": "quick",
   "answer": "Proponuję uruchomić program szybki, który pozwoli na szybkie umycie lekko zabrudzonych naczyń przed przyjściem gości."
